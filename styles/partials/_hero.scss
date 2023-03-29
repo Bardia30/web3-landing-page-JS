@@ -1,0 +1,50 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+
+.hero {
+    padding-bottom: 4.5rem;
+
+    &__img{
+        width: 45.625rem;
+        height: 18.75rem;
+    }
+    &__header{
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: $header-color;
+        line-height: 3.5rem;
+        margin-top: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    &__lower-section{
+        display: flex;
+    }
+    &__paragraph {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: $secondary-text;
+        line-height: 1.625rem;
+        margin-top: 1.75rem;
+        margin-bottom: 1.8125rem;
+        width: 21.875rem;
+    }
+    &__btn {
+        background-color:$hover-color;
+        width:11.5625rem;
+        height: 3rem;
+        color: $primary-bg-color;
+        font-size: 0.875rem;
+        font-weight:700;
+        line-height: 1.5rem;
+        letter-spacing: 0.275rem;
+        border:none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+        &:hover{
+            background-color: $header-color;
+        }
+    }
+}
