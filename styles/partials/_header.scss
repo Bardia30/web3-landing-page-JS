@@ -1,0 +1,20 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list-item{
+
+    }
+}
