@@ -5,6 +5,11 @@
 .footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    row-gap: 2rem;
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .card {

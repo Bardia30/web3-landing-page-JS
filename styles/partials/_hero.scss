@@ -10,16 +10,26 @@
         height: 18.75rem;
     }
     &__header{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 800;
         color: $header-color;
-        line-height: 3.5rem;
+        line-height: 2.5rem;
         margin-top: 1.75rem;
         margin-bottom: 0;
+        width:80%;
+        @include desktop{
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            width:100%;
+        }
     }
 
     &__lower-section{
         display: flex;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+        }
     }
     &__paragraph {
         font-size: 0.9375rem;

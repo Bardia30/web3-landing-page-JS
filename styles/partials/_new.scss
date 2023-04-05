@@ -5,16 +5,21 @@
 
 .new {
     background-color: $header-color;
-    margin-left: 1.875rem;
-    // height: 31.9375rem;
+    @include desktop{
+        margin-left: 1.875rem;
+    }
     margin-bottom: 4.5rem;
     padding:2rem 1.5rem 0 1.5rem;
     &__header{
         color: $alternate-header;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
         font-weight:700;
         margin-top: 0;
+        @include desktop{
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
     }
     &__title{
         color: $primary-bg-color;

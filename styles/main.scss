@@ -9,9 +9,12 @@
 body{
     box-sizing: border-box;
     margin: 0;
-    padding: 5.625rem 10.3125rem 8.0625rem 10.3125rem;
+    padding: 1rem 1.75rem 8rem 1rem;
     background: $primary-bg-color;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    @include desktop {
+        padding: 5.625rem 10.3125rem 8.0625rem 10.3125rem;
+    }
 }
 
 main {
@@ -21,4 +24,8 @@ main {
 
 .main-top {
     display: flex;
+    flex-direction: column;
+    @include desktop{
+        flex-direction: row;
+    }
 }

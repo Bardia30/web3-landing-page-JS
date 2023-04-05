@@ -1,6 +1,13 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+@media (min-width: 1200px) {
+  .footer {
+    flex-direction: row;
+  }
 }
 
 .card {
@@ -79,15 +86,29 @@
   height: 18.75rem;
 }
 .hero__header {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #00001A;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
   margin-top: 1.75rem;
   margin-bottom: 0;
+  width: 80%;
+}
+@media (min-width: 1200px) {
+  .hero__header {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    width: 100%;
+  }
 }
 .hero__lower-section {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .hero__lower-section {
+    flex-direction: row;
+  }
 }
 .hero__paragraph {
   font-size: 0.9375rem;
@@ -118,16 +139,26 @@
 
 .new {
   background-color: #00001A;
-  margin-left: 1.875rem;
   margin-bottom: 4.5rem;
   padding: 2rem 1.5rem 0 1.5rem;
 }
+@media (min-width: 1200px) {
+  .new {
+    margin-left: 1.875rem;
+  }
+}
 .new__header {
   color: #E9AA52;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 700;
   margin-top: 0;
+}
+@media (min-width: 1200px) {
+  .new__header {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 .new__title {
   color: #FFFDFA;
@@ -162,9 +193,14 @@ hr {
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 5.625rem 10.3125rem 8.0625rem 10.3125rem;
+  padding: 1rem 1.75rem 8rem 1rem;
   background: #FFFDFA;
   font-family: "Inter", sans-serif;
+}
+@media (min-width: 1200px) {
+  body {
+    padding: 5.625rem 10.3125rem 8.0625rem 10.3125rem;
+  }
 }
 
 main {
@@ -174,4 +210,10 @@ main {
 
 .main-top {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .main-top {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */
